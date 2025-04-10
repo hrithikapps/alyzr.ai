@@ -1,9 +1,20 @@
-import React from 'react'
+import {
+  SidebarHeader,
+  Sidebar,
+  SidebarContent,
+  SidebarGroup,
+  SidebarFooter,
+} from "@/ui/sidebar";
 
-const AppSidebar = () => {
+export function AppSidebar() {
   return (
-    <div>AppSidebar</div>
-  )
+    <Sidebar>
+      <SidebarHeader />
+      <SidebarContent>
+        <SidebarGroup />
+        <SidebarGroup />
+      </SidebarContent>
+      <SidebarFooter />
+    </Sidebar>
+  );
 }
-
-export default AppSidebar
