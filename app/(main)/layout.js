@@ -4,7 +4,9 @@ import DashboardProvider from "./provider";
 const DashboardLayout = ({ children }) => {
   return (
     <div>
-      <DashboardProvider>{children}</DashboardProvider>
+      <DashboardProvider>
+        <div className="p-10 bg-gray-100">{children}</div>
+      </DashboardProvider>
     </div>
   );
 };
