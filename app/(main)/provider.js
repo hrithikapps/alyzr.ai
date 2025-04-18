@@ -1,12 +1,14 @@
 import React from "react";
 import { AppSidebar } from "./_components/AppSidebar";
-import { SidebarProvider } from "@/ui/sidebar";
+import { SidebarProvider, SidebarTrigger } from "@/ui/sidebar";
 
 const DashboardProvider = ({ children }) => {
   return (
     <SidebarProvider>
       <AppSidebar />
-      <div>{children}</div>
+      <div>
+        <SidebarTrigger/>
+        {children}</div>
     </SidebarProvider>
   );
 };
